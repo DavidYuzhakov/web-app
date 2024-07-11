@@ -1,0 +1,42 @@
+.nav {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+}
+
+.nav > div {
+  position: absolute;
+  top: 0;
+  width: 198px;
+  height: 125px;
+}
+
+.nav-left {
+  left: 0;
+  background: url('./top/left.png') center / cover no-repeat;
+}
+
+.nav-left img {
+  left: 12px;
+}
+
+.nav-right {
+  right: 0;
+  background: url('./top/right.png') center / cover no-repeat;
+}
+
+.nav-right img {
+  right: 12px;
+}
+
+.link {
+  position: absolute;
+  top: 5px;
+  right: 72px;
+  text-decoration: none;
+  color: #076CE9;
+}
+

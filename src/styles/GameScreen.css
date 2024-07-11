@@ -1,0 +1,41 @@
+.game-screen {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  width: 100dvw;
+  height: 100dvh;
+
+  background: url('./bg.jpg') no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.game-screen:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background-color: #0A0532;
+  opacity: .6;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

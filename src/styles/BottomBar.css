@@ -1,0 +1,217 @@
+.bottom-bar {
+  position: relative;
+  background: url('./bottom/bottom-bar.png') no-repeat center;
+  max-width: 100%;
+  height: 125px;
+}
+
+/* POWER */
+.power {
+  position: absolute;
+  top: 90px;
+  left: 31.5px;
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 324px;
+}
+
+.power-stock {
+  position: absolute;
+  top: 3px;
+  left: 50px;
+
+  display: flex;
+  gap: 1px;
+  height: 22px;
+  width: 225px;
+}
+
+.stock-image {
+  position: absolute;
+  top: -2px;
+  left: -12px;
+  z-index: 1;
+}
+
+.segment {
+  opacity: .65;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, .2);
+
+  width: 8px;
+  height: 100%;
+}
+
+.red {
+  background-color: #D22439;
+}
+
+.orange {
+  background-color: #D25831;
+}
+
+.yellow {
+  background-color: #EB9319;
+}
+
+.light-green {
+  background-color: #FFD233;
+}
+
+.green {
+  background-color: #43CA3F;
+}
+
+.cap-right {
+  transform: scaleX(-1)
+}
+
+.cap img:nth-child(1) {
+  transform: translateY(5px);
+}
+
+.cap img:nth-child(2) {
+  position: relative;
+  z-index: 2;
+
+  transform: translateX(-6px)
+}
+
+.cap img:nth-child(3) {
+  position: relative;
+  z-index: 2;
+  transform: translateX(-10px)
+}
+
+/* WEAPON */
+.weapon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weapon-info {
+  position: relative;
+  width: 134px;
+  height: 56px;
+}
+
+.weapon-info-left {
+  translate: 16px;
+  background: url('./bottom/weapon-dec-left.png') center / cover no-repeat
+}
+
+.weapon-info-right {
+  translate: -15px;
+  background: url('./bottom/weapon-dec-right.png') center / cover no-repeat
+}
+
+.weapon-info-left > div {
+  position: absolute;
+  right: 20px;
+}
+
+.weapon-info-right > div {
+  position: absolute;
+  left: 20px;
+}
+
+.weapon-text {
+  top: 12px;
+
+  font-size: 12px;
+  color: #076CE9;
+}
+
+.weapon-num {
+  top: 25px;
+  
+  font-size: 12px;
+  color: #19C2EF;
+}
+
+.weapon-main {
+  position: relative;
+  z-index: 2;
+}
+
+.weapon-bg {
+  position: relative;
+  z-index: 2;
+
+  width: 135px;
+  height: 40px;
+}
+
+.weapon-bg:nth-child(2) img {
+  translate: 0 -10px;
+}
+
+.weapon-bg:before,
+.weapon-bg:after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  z-index: 1;
+
+  width: 56px;
+  border-radius: 2px;
+}
+
+.weapon-bg:before {
+  height: 3px;
+
+  background-color: #1BDD15;
+  box-shadow: 0 0 10px #1BDD15
+}
+
+.weapon-bg:after {
+  filter: blur(1px);
+  background-color: #fff;
+  box-shadow: 0 0 10px #fff;
+
+  height: 1px;
+}
+
+.weapon-bg:nth-child(1):before {
+  top: 6px;
+}
+
+.weapon-bg:nth-child(1):after {
+  top: 7px;
+}
+
+.weapon-bg:nth-child(2):before {
+  bottom: 14px;
+}
+
+.weapon-bg:nth-child(2):after {
+  bottom: 15px;
+}
+
+.weapon-image {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  z-index: 0;
+
+  width: 112px;
+  height: 51px;
+
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .3)
+}
+
+.weapon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 390px) {
+  .power {
+    left: calc(0px + 31.5 * ((100vw - 320px) / 70));
+  }
+}
