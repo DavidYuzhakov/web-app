@@ -16,7 +16,7 @@
 
 .nav-left {
   left: 0;
-  background: url('./top/left.png') center / cover no-repeat;
+  background: url('../top/left.png') center / cover no-repeat;
 }
 
 .nav-left img {
@@ -25,7 +25,7 @@
 
 .nav-right {
   right: 0;
-  background: url('./top/right.png') center / cover no-repeat;
+  background: url('../top/right.png') center / cover no-repeat;
 }
 
 .nav-right img {

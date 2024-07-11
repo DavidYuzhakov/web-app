@@ -16,7 +16,7 @@
   width: 142px;
   height: 29px;
 
-  background: url('./middle/credits-title.png') center /cover no-repeat;
+  background: url('../middle/credits-title.png') center /cover no-repeat;
   filter: drop-shadow(0 0 20px #fd9d17);
   
   translate: -50% 0;
@@ -63,7 +63,7 @@
 
 .credits-bottom {
   position: relative;
-  background: url('./middle/credits.png') center / cover no-repeat;
+  background: url('../middle/credits.png') center / cover no-repeat;
   width: 100%;
   height: 75px;
 }
